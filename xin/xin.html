@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: linen;
+    }
+    .box{
+        width: 350px;
+        margin: 50px auto;
+        position: absolute;
+        top: 100px;
+        left: 30%;
+        animation: boom 300ms infinite ;
+
+
+    }
+    .left,.right{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(157, 103, 204);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        box-shadow: 0px 0px 40px #9d67cc;
+    }
+    .left{
+        left: 0;
+    }
+    .right{
+        right: 0;
+    }
+    .bottom{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(157, 103, 204);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 76px;
+        left: 76px;
+        box-shadow: 0px 0px 40px #9d67cc;
+    }
+    @keyframes boom {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.2);
+        }
+
+    }
+
+</style>
+<body>
+<div class="box">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+</div>
+</body>
+</html>
